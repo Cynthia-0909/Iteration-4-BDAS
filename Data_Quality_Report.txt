@@ -1,0 +1,112 @@
+Dataset Structure:
+StructType(List(StructField(SEQNO,IntegerType,true),StructField(Sex,IntegerType,true),StructField(Age,IntegerType,true),StructField(Education,IntegerType,true),StructField(Income,IntegerType,true),StructField(AnyHealthcare,IntegerType,true),StructField(NoDocbcCost,IntegerType,true),StructField(GenHlth,IntegerType,true),StructField(MentHlth,IntegerType,true),StructField(PhysHlth,IntegerType,true),StructField(DiffWalk,IntegerType,true),StructField(Diabetes_012,IntegerType,true),StructField(HighBP,IntegerType,true),StructField(HighChol,IntegerType,true),StructField(CholCheck,IntegerType,true),StructField(BMI,IntegerType,true),StructField(Smoker,IntegerType,true),StructField(Stroke,IntegerType,true),StructField(HeartDiseaseorAttack,IntegerType,true),StructField(PhysActivity,IntegerType,true),StructField(Fruits,IntegerType,true),StructField(Veggies,IntegerType,true),StructField(HvyAlcoholConsump,IntegerType,true),StructField(ComorbidityIndex,IntegerType,true)))
+
+Missing Values:
+                      missing_count
+Sex                            1144
+Age                            1144
+Education                      1144
+Income                         1144
+AnyHealthcare                     7
+NoDocbcCost                       7
+GenHlth                           7
+MentHlth                          7
+PhysHlth                          7
+DiffWalk                          7
+Diabetes_012                  26977
+HighBP                        26977
+HighChol                      26977
+CholCheck                     26977
+BMI                           26977
+Smoker                        26977
+Stroke                        26977
+HeartDiseaseorAttack          26977
+PhysActivity                  26977
+Fruits                        26977
+Veggies                       26977
+HvyAlcoholConsump             26977
+ComorbidityIndex              26977
+
+Duplicate Entries:
+Duplicate rows: 0
+
+
+Data Types:
+SEQNO                     int32
+Sex                     float64
+Age                     float64
+Education               float64
+Income                  float64
+AnyHealthcare           float64
+NoDocbcCost             float64
+GenHlth                 float64
+MentHlth                float64
+PhysHlth                float64
+DiffWalk                float64
+Diabetes_012            float64
+HighBP                  float64
+HighChol                float64
+CholCheck               float64
+BMI                     float64
+Smoker                  float64
+Stroke                  float64
+HeartDiseaseorAttack    float64
+PhysActivity            float64
+Fruits                  float64
+Veggies                 float64
+HvyAlcoholConsump       float64
+ComorbidityIndex        float64
+dtype: object
+
+Data Description:
+              SEQNO            Sex            Age      Education  \
+count  2.363780e+05  235234.000000  235234.000000  235234.000000   
+mean   2.021118e+09       0.477801       7.866898       5.139232   
+std    6.823660e+04       0.499508       3.236419       0.945960   
+min    2.021000e+09       0.000000       1.000000       1.000000   
+25%    2.021059e+09       0.000000       5.000000       4.000000   
+50%    2.021118e+09       0.000000       8.000000       5.000000   
+75%    2.021177e+09       1.000000      10.000000       6.000000   
+max    2.021236e+09       1.000000      13.000000       6.000000   
+
+              Income  AnyHealthcare    NoDocbcCost        GenHlth  \
+count  235234.000000  236371.000000  236371.000000  236371.000000   
+mean        6.928084       0.962572       0.063739       2.480719   
+std         2.375338       0.189810       0.244288       1.029141   
+min         1.000000       0.000000       0.000000       1.000000   
+25%         5.000000       1.000000       0.000000       2.000000   
+50%         7.000000       1.000000       0.000000       2.000000   
+75%         9.000000       1.000000       0.000000       3.000000   
+max        11.000000       1.000000       1.000000       5.000000   
+
+            MentHlth       PhysHlth  ...      CholCheck            BMI  \
+count  236371.000000  236371.000000  ...  209401.000000  209401.000000   
+mean        3.937784       3.751387  ...       0.963639      28.865832   
+std         7.886588       8.246007  ...       0.187187       6.336328   
+min         0.000000       0.000000  ...       0.000000      12.000000   
+25%         0.000000       0.000000  ...       1.000000      24.000000   
+50%         0.000000       0.000000  ...       1.000000      28.000000   
+75%         4.000000       2.000000  ...       1.000000      32.000000   
+max        30.000000      30.000000  ...       1.000000      60.000000   
+
+              Smoker         Stroke  HeartDiseaseorAttack   PhysActivity  \
+count  209401.000000  209401.000000         209401.000000  209401.000000   
+mean        0.412634       0.039131              0.086284       0.782790   
+std         0.492309       0.193906              0.280784       0.412348   
+min         0.000000       0.000000              0.000000       0.000000   
+25%         0.000000       0.000000              0.000000       1.000000   
+50%         0.000000       0.000000              0.000000       1.000000   
+75%         1.000000       0.000000              0.000000       1.000000   
+max         1.000000       1.000000              1.000000       1.000000   
+
+              Fruits        Veggies  HvyAlcoholConsump  ComorbidityIndex  
+count  209401.000000  209401.000000      209401.000000     209401.000000  
+mean        0.625871       0.831849           0.062201          0.942641  
+std         0.483898       0.374001           0.241521          0.948759  
+min         0.000000       0.000000           0.000000          0.000000  
+25%         0.000000       1.000000           0.000000          0.000000  
+50%         1.000000       1.000000           0.000000          1.000000  
+75%         1.000000       1.000000           0.000000          2.000000  
+max         1.000000       1.000000           1.000000          4.000000  
+
+[8 rows x 24 columns]
